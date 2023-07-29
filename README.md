@@ -18,13 +18,7 @@ While this repository primarily serves as a personal showcase, I am open to coll
 
 Here is a brief overview of some of the projects you can find in this repository:
 
-1. **Stock-Data-Scraper**: The Data Scraper is a Python script that allows users to retrieve historical stock data for a specified stock symbol from Yahoo Finance. The script prompts the user to input the stock symbol, period (1d/1w/1mo/1y), and interval (1m/1h) for data retrieval.
-
-Upon execution, the script uses the `yfinance` library to fetch the stock data based on the user's input. It then processes the data and segregates it based on the date, creating separate CSV files for each date under the "Data" folder. Additionally, a log file is generated that contains information about any missing or incorrect time points during data scraping.
-
-The Data Scraper aims to be user-friendly and dynamic by allowing users to choose their desired time period and interval. It handles data validation and provides feedback to users through the logfile, where any discrepancies in the time intervals are logged.
-
-This project serves as a useful tool for collecting and organizing historical stock data for analysis, research, or building financial models. As an open-source project, it encourages collaboration and contributions from the community to enhance its functionality and adapt it for other data scraping purposes.
+1. **Stock-Data-Scraper**: The Data Scraper is a Python script that allows users to retrieve historical stock data for a specified stock symbol from Yahoo Finance. The script prompts the user to input the stock symbol, period (1d/1w/1mo/1y), and interval (1m/1h) for data retrieval. Upon execution, the script uses the `yfinance` library to fetch the stock data based on the user's input. It then processes the data and segregates it based on the date, creating separate CSV files for each date under the "Data" folder. Additionally, a log file is generated that contains information about any missing or incorrect time points during data scraping. The Data Scraper aims to be user-friendly and dynamic by allowing users to choose their desired time period and interval. It handles data validation and provides feedback to users through the logfile, where any discrepancies in the time intervals are logged. This project serves as a useful tool for collecting and organizing historical stock data for analysis, research, or building financial models. As an open-source project, it encourages collaboration and contributions from the community to enhance its functionality and adapt it for other data scraping purposes.
 
 
 ## License
