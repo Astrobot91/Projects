@@ -112,7 +112,8 @@ new_data = pd.read_csv(f"Data/{stock_symbol}/{interval_value}-{interval_unit.tit
 data_merger = pd.concat([old_data, new_data], ignore_index = True).drop_duplicates()
 data_merger.to_csv(f"Data/{stock_symbol}/{stock_symbol}-{interval_value}-{interval_unit.title()}-DATA.csv", index = False)
 print("\nMerged the data successfully!")
-print(f"\nSome data points are missing in the dataset. Please check the logfile at location: 'Data/{stock_symbol}/{interval_value}-{interval_unit.title()}/LOGS/{date_today}-logfile.txt'.")
+if os.stat(f"Data/{stock_symbol}/{interval_value}-{interval_unit.title()}/LOGS/{date_today}-logfile.txt").st_size != 0:
+    print(f"\nSome data points are missing in the dataset. Please check the logfile at location: 'Data/{stock_symbol}/{interval_value}-{interval_unit.title()}/LOGS/{date_today}-logfile.txt'.")
 
 
 # Change the date format
