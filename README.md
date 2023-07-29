@@ -32,7 +32,3 @@ If you have any questions, ideas, or simply want to connect with me, feel free t
 Thank you for visiting the "Projects" repository, and I hope you find the projects here inspiring and useful!
 
 Happy coding! 🚀
-
----
-
-Please customize this description to reflect your own personality and the specific projects you plan to include in the repository. Feel free to add more details, such as links to your social media profiles or personal website, to encourage collaboration and interaction with others in the developer community.
