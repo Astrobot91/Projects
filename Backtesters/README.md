@@ -2,31 +2,30 @@
 
 ## Overview
 
-The Backtester V1 is a program designed for backtesting trading strategies on historical price data. It employs various indicators and conditions to simulate trades and calculate potential profits and losses. The program focuses on CPR levels (Central Pivot Range) as well as candlestick patterns for identifying potential entry and exit points. The trading strategies are divided into a long-side and a short-side approach.
+The Backtester V1 is a Python-based backtesting framework designed to evaluate trading strategies using historical price data. It combines technical indicators, such as Exponential Moving Averages (EMA), and Camarilla Pivot Range (CPR) levels, with specific entry and exit conditions to simulate and assess trading performance.
 
-## Indicators and Strategies
+## Key Features
 
-The program uses the following indicators:
+- **EMA20 and EMA50:** The program calculates Exponential Moving Averages with periods of 20 and 50, providing insights into trend direction and momentum.
+- **CPR Levels:** Camarilla Pivot Range levels are calculated using the standard formula. These levels serve as potential support and resistance levels.
+- **Long and Short Side Strategies:** The program includes both long and short side trading strategies based on different entry and exit conditions.
+- **Candlestick Patterns:** The strategies incorporate candlestick patterns, such as hammer candles, to identify potential entry points.
+- **Backtesting:** Historical price data is used to execute simulated trades, recording key trade metrics such as entry price, exit price, risk-reward ratio, and more.
+- **Results and Statistics:** The program generates statistics about the simulated trades, including net earnings, cumulative profits and losses, risk-reward ratios, accuracy, and more.
 
-### Indicators
+## How It Works
 
-- EMA20: Exponential Moving Average with a period of 20.
-- EMA50: Exponential Moving Average with a period of 50.
-- CPR (Camarilla Pivot Range): Calculated using the standard CPR formula.
+1. **Data Loading and Preprocessing:** The program loads historical OHLCV (Open-High-Low-Close-Volume) data from a CSV file. It calculates EMA20 and EMA50 for trend analysis.
 
-## Execution Flow
+2. **CPR Calculation:** CPR levels are computed based on the standard formula using the day's OHLC values.
 
-1. Load and Preprocess Data: The program reads historical OHLC (Open-High-Low-Close) data from a CSV file. It calculates EMA20 and EMA50 for each trading day.
+3. **Strategy Execution:** The program implements trading strategies by applying specific entry and exit conditions. These conditions incorporate indicators like EMA and CPR levels, as well as candlestick patterns.
 
-2. Calculate CPR Levels: The program calculates CPR levels using the standard CPR formula based on the day's OHLC values. CPR levels are used as potential support and resistance levels.
+4. **Backtesting and Results:** Trades are simulated using historical data, capturing entry, exit, and other trade-related details. The program calculates key trade metrics and provides an overview of the trading strategy's performance.
 
-3. Determine CPR Level Combinations: The program generates combinations of CPR levels based on trade direction (long or short). These combinations help identify which CPR level combinations are crossed in the desired trade direction.
+## Usage
 
-4. Backtesting: The strategies are executed based on the identified CPR level combinations. Entry and exit conditions are applied to historical data to simulate trades. For each trade, information such as entry price, stop-loss, exit price, and risk-reward ratio are recorded.
-
-5. Results: The program generates various statistics about the backtested trades, including net earnings, cumulative P&L, RR ratio, accuracy, and more.
-
-Overall, the Backtester V1 is a starting point for developing and testing trading strategies. Will build upon this foundation to create more sophisticated and profitable trading algorithms.
+Users can clone this repository and customize the strategies, indicators, and parameters to suit their trading preferences. By iterating, optimizing, and adding new strategies, traders can develop profitable algorithms tailored to their trading goals.
 
 ## Acknowledgments
 
